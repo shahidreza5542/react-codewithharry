@@ -5,29 +5,32 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [Random, setRandom] = useState("click refresh otp button")
+  const refreshOtp = () => {
+    setRandom(Math.floor(Math.random() * 1000000 + 1))
+  };
+  
+  const btn = () => {
+    setCount(count+1)
+  }
+
+  const remove = () => {
+    setCount(count - 1)
+  }
+
+  if (count < 0) {
+    setCount(0)
+    alert('stop stop')
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>The count is {count}</div>
+      <button onClick={btn}
+      >Update count</button>
+      <button onClick={remove}>remove</button>
+      <p>Otp number is {Random}</p>
+      <button onClick={refreshOtp}>Refresh Otp</button>
     </>
   )
 }

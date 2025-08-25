@@ -11,17 +11,17 @@ function App() {
       <Navbar />
       <div className='box'>
         <br />
-        <Card title="Card 1" />
+        <Card price="90$" />
         <br />
-        <Card title="Card 2" />
+        <Card price="54$" />
         <br />
-        <Card title="Card 3" />
+        <Card price="34$" />
         <br />
-        <Card title="Card 4" />
+        <Card price="095$" />
         <br />
-        <Card title="Card 5" />
+        <Card price="99$" />
         <br />
-        <Card title="Card 6" />
+        <Card price="10$" />
       </div>
       <br />
       <Footer />
