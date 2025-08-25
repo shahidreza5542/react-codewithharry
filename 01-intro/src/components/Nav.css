@@ -1,0 +1,27 @@
+nav,
+ul {
+   display: flex;
+}
+
+li {
+   list-style: none;
+}
+
+ul {
+   gap: 33px;
+}
+
+nav {
+   position: fixed;
+   width: 100%;
+   background-color: #151f28;
+   color: white;
+   top: 0;
+   gap: 33px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+   caret-color: transparent;
+   height: 70px;
+}
