@@ -17,6 +17,8 @@ function App() {
 
   const handlevalue = (e) => {
     setform(e.target.value);
+    console.log(e.target.value);
+    
     
     
   }
